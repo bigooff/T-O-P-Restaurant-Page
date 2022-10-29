@@ -1,16 +1,15 @@
+import { create } from "./Utils"
+
 class ContactPage {
 
     mainContent = function(){
         const content = document.querySelector("#content")
-        const el = document.createElement("div")
+        const el = create("div","main-content")
         const p = document.createElement("h6")
-        el.className = "main-content"
         p.textContent = "Contact Details"
         content.appendChild(el)
         
-
-        const contact = document.createElement("div")
-        contact.classList = "contact-container"
+        const contact = create("div","contact-container")
         el.appendChild(contact)
         contact.appendChild(p)
         const phone = create("p","phone-number")
@@ -28,11 +27,6 @@ class ContactPage {
 
 
 
-function create(element,className){
-    const temp = document.createElement(element)
-    temp.classList = className
-    return temp;
-}
 
 
 const ContactP = new ContactPage();

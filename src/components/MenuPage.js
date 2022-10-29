@@ -1,23 +1,21 @@
+import { create } from "./Utils"
+
 class MenuPage {
 
     mainContent = function(){
         const content = document.querySelector("#content")
-        const el = document.createElement("div")
+        const el = create("div","main-content")
         const h6 = document.createElement("h6")
 
-        el.className = "main-content"
         h6.textContent = "Our Menu"
-        const menu = document.createElement("div")
-        menu.className = "card-container"
+        const menu = create("div","card-container")
         // Cards creator
-        const cardGrid = document.createElement("div")
-        cardGrid.classList = "cards-grid"
+        const cardGrid = create("div","cards-grid")
         
         for (let i = 0; i < 4; i++) {
-            const card = document.createElement("div")
+            const card = create("div","card")
             const cardInfo = document.createElement("p")
             const dish = document.createElement("h1")
-            card.classList = "card"
             
             cardGrid.appendChild(card)
             switch (i) {
