@@ -96,3 +96,23 @@ a:hover{
 a:focus{
     color: none;
 }
+
+.contact-container{
+    align-self: flex-start;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 4fr;
+    gap: 1rem;
+}
+
+.contact-container h6{
+    font-size: 1.5rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.contact-container p {
+    font-size: 1.25rem;
+}

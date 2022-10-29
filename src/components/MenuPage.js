@@ -23,7 +23,7 @@ class MenuPage {
             switch (i) {
                 case 0:
                     dish.textContent = "Margarita"
-                    cardInfo.textContent = "The recommended choice for new customers"
+                    cardInfo.textContent = "The recommended choice for new customers."
                     card.appendChild(dish)
                     card.appendChild(cardInfo)
                     break;
@@ -35,7 +35,7 @@ class MenuPage {
                     break;
                     case 2:
                     dish.textContent = "Special"
-                    cardInfo.textContent = "A good old time classic"
+                    cardInfo.textContent = "A good old time classic."
                     card.appendChild(dish)
                     card.appendChild(cardInfo)
                     break;
