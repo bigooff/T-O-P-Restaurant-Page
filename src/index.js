@@ -1,4 +1,5 @@
 import "./css/style.css"
+import "./css/card.css"
 import MP from "./components/MainPage";
 import MenuP from "./components/MenuPage";
 import ContactP from "./components/ContactPage";
