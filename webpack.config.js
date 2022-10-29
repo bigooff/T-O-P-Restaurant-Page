@@ -3,7 +3,7 @@ const path = require('path');
 
 
 module.exports = {
-  mode: "development",
+  mode: "production",
 
   entry: './src/index.js',
 
@@ -20,11 +20,7 @@ module.exports = {
         },
         {
             test: /\.(png|svg|jpg|jpeg|gif)$/i,
-            use:[
-              {
-                loader: 'file-loader',
-              },
-            ],
+            type: "asset/resource"
         },
     ],
   },

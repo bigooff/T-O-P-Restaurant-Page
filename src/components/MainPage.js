@@ -1,4 +1,5 @@
 import { create } from "./Utils"
+import pizza from"../imgs/pizza.jpg" 
 
 class MainPage {
 
@@ -46,7 +47,7 @@ class MainPage {
 
         p.textContent = "This is the new and amazing pizza place restaurant house  where you can try the best pizzas in the whole world and beyond"
         img.className = "fireplace"
-        img.src = "../src/imgs/pizza.jpg"
+        img.src = pizza
 
         content.appendChild(el)
         el.appendChild(img)
